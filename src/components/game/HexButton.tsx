@@ -19,7 +19,9 @@ const HexButton: React.FC<HexButtonProps> = ({
     <button
       className={cn(
         "hex-button text-2xl font-bold uppercase transition-letter letter-press",
-        isCenter ? "text-bee-black bg-bee-yellow" : "text-bee-black bg-bee-gray",
+        isCenter 
+          ? "text-bee-black bg-bee-yellow" 
+          : "text-white bg-bee-black/80", // Changed from "text-bee-black bg-bee-gray" for better contrast
         className
       )}
       onClick={() => onClick(letter)}
