@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import HoneycombGrid from './HoneycombGrid';
 import WordInput from './WordInput';
@@ -20,6 +21,15 @@ interface SpellingBeeGameProps {
   className?: string;
 }
 
+// Define the message type to match the MessageToast component
+type MessageType = 'success' | 'error' | 'info' | 'pangram';
+
+interface ToastMessage {
+  text: string;
+  type: MessageType;
+  show: boolean;
+}
+
 const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ 
   dictionary,
   className 
@@ -31,7 +41,7 @@ const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [score, setScore] = useState(0);
   const [maxScore, setMaxScore] = useState(0);
-  const [message, setMessage] = useState({ text: '', type: 'info' as const, show: false });
+  const [message, setMessage] = useState<ToastMessage>({ text: '', type: 'info', show: false });
 
   // Calculate the maximum possible score when component mounts
   useEffect(() => {
@@ -47,7 +57,7 @@ const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({
   }, [dictionary]);
 
   // Handle showing messages
-  const showMessage = useCallback((text: string, type: 'success' | 'error' | 'info' | 'pangram') => {
+  const showMessage = useCallback((text: string, type: MessageType) => {
     setMessage({ text, type, show: true });
   }, []);
 

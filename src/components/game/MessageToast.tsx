@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
-type MessageType = 'success' | 'error' | 'info' | 'pangram';
+// Export this type so it can be used in other components
+export type MessageType = 'success' | 'error' | 'info' | 'pangram';
 
 interface MessageToastProps {
   message: string;
