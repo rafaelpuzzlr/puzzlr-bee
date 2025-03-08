@@ -26,7 +26,7 @@ const Game = () => {
       <footer className="py-6 border-t border-gray-200 text-center text-sm text-bee-darkGray">
         <div className="container max-w-4xl mx-auto px-4">
           <p>
-            A Spelling Bee clone inspired by The New York Times puzzle.
+            2025 Puzzlr
           </p>
         </div>
       </footer>

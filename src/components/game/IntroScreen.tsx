@@ -8,8 +8,8 @@ const IntroScreen: React.FC = () => {
       <div className="mb-6 animate-float">
         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M40 10C32.8 10 27 15.8 27 23V40.5C27 47.7 32.8 53.5 40 53.5C47.2 53.5 53 47.7 53 40.5V23C53 15.8 47.2 10 40 10Z" 
-            stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M26 30H54" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+            fill="#403E43" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M26 30H54" stroke="#FEF7CD" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           <path d="M40 54V70" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           <path d="M33 64L40 70L47 64" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           <path d="M20 25C20 25 16 32 16 40.5C16 49 20 56 20 56" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -31,7 +31,7 @@ const IntroScreen: React.FC = () => {
       </Link>
       
       <div className="mt-20 text-center text-bee-black/80 text-sm">
-        <p className="mb-1">{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
+        <p className="mb-1">2025 Puzzlr</p>
       </div>
     </div>
   );
