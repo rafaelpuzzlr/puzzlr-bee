@@ -145,6 +145,16 @@ html {
   transition: transform 0.2s ease-out;
 }
 
+.hex-button:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+  z-index: -1;
+}
+
 .hex-button:hover {
   transform: translateY(-2px);
 }
