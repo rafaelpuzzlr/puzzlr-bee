@@ -53,6 +53,7 @@ const HoneycombGrid: React.FC<HoneycombGridProps> = ({
             <HexButton 
               letter={letter} 
               onClick={onLetterClick}
+              className="shadow-lg" // Added shadow for better separation from background
             />
           </div>
         );

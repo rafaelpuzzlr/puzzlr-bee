@@ -21,11 +21,13 @@ const HexButton: React.FC<HexButtonProps> = ({
         "hex-button text-2xl font-bold uppercase transition-letter letter-press",
         isCenter 
           ? "text-bee-black bg-bee-yellow" 
-          : "text-white bg-bee-black/80", // Keeping white text on dark background for better contrast
+          : "bg-bee-black/80", // Removed the text color class
+        "text-white", // Added explicit white text color for all buttons
         className
       )}
       onClick={() => onClick(letter)}
       aria-label={`Letter ${letter}`}
+      style={{ textShadow: "0px 0px 4px rgba(255,255,255,0.5)" }} // Added text shadow for better visibility
     >
       {letter}
     </button>
