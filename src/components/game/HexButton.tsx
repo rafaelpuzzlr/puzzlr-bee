@@ -21,7 +21,7 @@ const HexButton: React.FC<HexButtonProps> = ({
         "hex-button text-2xl font-bold uppercase transition-letter letter-press",
         isCenter 
           ? "text-bee-black bg-bee-yellow" 
-          : "bg-bee-black/80",
+          : "bg-black", // Changed from bg-bee-black/80 to a solid black
         "text-white", // Explicit white text for all buttons
         className
       )}
