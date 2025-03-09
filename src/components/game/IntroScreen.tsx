@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const IntroScreen: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-bee-yellow">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-400 to-purple-500">
       <div className="mb-6 animate-float">
         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M40 10C32.8 10 27 15.8 27 23V40.5C27 47.7 32.8 53.5 40 53.5C47.2 53.5 53 47.7 53 40.5V23C53 15.8 47.2 10 40 10Z" 
@@ -17,20 +17,20 @@ const IntroScreen: React.FC = () => {
         </svg>
       </div>
       
-      <h1 className="text-6xl font-bold mb-6 text-bee-black">Spelling Bee</h1>
+      <h1 className="text-6xl font-bold mb-6 text-white">Spelling Bee</h1>
       
-      <p className="text-2xl mb-10 text-center max-w-md text-bee-black">
+      <p className="text-2xl mb-10 text-center max-w-md text-white">
         How many words can you make with 7 letters?
       </p>
       
       <Link 
         to="/play" 
-        className="py-4 px-16 bg-bee-black text-white rounded-full text-xl font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+        className="py-4 px-16 bg-white text-indigo-700 rounded-full text-xl font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
       >
         Play
       </Link>
       
-      <div className="mt-20 text-center text-bee-black/80 text-sm">
+      <div className="mt-20 text-center text-white/80 text-sm">
         <p className="mb-1">2025 Puzzlr</p>
       </div>
     </div>

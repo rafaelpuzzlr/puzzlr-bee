@@ -23,29 +23,29 @@ const GameControls: React.FC<GameControlsProps> = ({
       <button
         onClick={onShuffle}
         className={cn(
-          "p-3 rounded-full bg-bee-gray hover:bg-bee-lightYellow transition-all duration-200",
+          "p-3 rounded-full bg-slate-200 hover:bg-slate-300 transition-all duration-200",
           disabled && "opacity-50 cursor-not-allowed"
         )}
         disabled={disabled}
         aria-label="Shuffle letters"
       >
-        <RefreshCw className="w-5 h-5 text-bee-black" />
+        <RefreshCw className="w-5 h-5 text-slate-700" />
       </button>
       <button
         onClick={onDelete}
         className={cn(
-          "p-3 rounded-full bg-bee-gray hover:bg-bee-lightYellow transition-all duration-200",
+          "p-3 rounded-full bg-slate-200 hover:bg-slate-300 transition-all duration-200",
           disabled && "opacity-50 cursor-not-allowed"
         )}
         disabled={disabled}
         aria-label="Delete letter"
       >
-        <Delete className="w-5 h-5 text-bee-black" />
+        <Delete className="w-5 h-5 text-slate-700" />
       </button>
       <button
         onClick={onEnter}
         className={cn(
-          "px-6 py-3 rounded-full bg-bee-yellow hover:bg-bee-yellow/90 text-bee-black font-medium transition-all duration-200",
+          "px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition-all duration-200",
           disabled && "opacity-50 cursor-not-allowed"
         )}
         disabled={disabled}
@@ -56,13 +56,13 @@ const GameControls: React.FC<GameControlsProps> = ({
       <button
         onClick={onClear}
         className={cn(
-          "p-3 rounded-full bg-bee-gray hover:bg-bee-lightYellow transition-all duration-200",
+          "p-3 rounded-full bg-slate-200 hover:bg-slate-300 transition-all duration-200",
           disabled && "opacity-50 cursor-not-allowed"
         )}
         disabled={disabled}
         aria-label="Clear input"
       >
-        <CornerDownLeft className="w-5 h-5 text-bee-black" />
+        <CornerDownLeft className="w-5 h-5 text-slate-700" />
       </button>
     </div>
   );

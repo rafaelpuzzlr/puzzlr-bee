@@ -23,7 +23,7 @@ const rankings: RankingType[] = [
   { name: "Great", minPercentage: 40 },
   { name: "Amazing", minPercentage: 50 },
   { name: "Genius", minPercentage: 70 },
-  { name: "Queen Bee", minPercentage: 100 }
+  { name: "Word Master", minPercentage: 100 }
 ];
 
 const ScoreIndicator: React.FC<ScoreIndicatorProps> = ({ 
@@ -42,12 +42,12 @@ const ScoreIndicator: React.FC<ScoreIndicatorProps> = ({
     <div className={cn("text-center", className)}>
       <div className="mb-2">
         <span className="text-3xl font-bold">{score}</span>
-        <span className="text-sm text-bee-darkGray ml-1">points</span>
+        <span className="text-sm text-slate-500 ml-1">points</span>
       </div>
       
-      <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden w-full max-w-xs mx-auto">
+      <div className="relative h-2 bg-slate-200 rounded-full overflow-hidden w-full max-w-xs mx-auto">
         <div 
-          className="absolute top-0 left-0 h-full bg-bee-yellow transition-all duration-500 ease-out" 
+          className="absolute top-0 left-0 h-full bg-indigo-600 transition-all duration-500 ease-out" 
           style={{ width: `${percentage}%` }}
         />
       </div>

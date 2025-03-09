@@ -15,12 +15,12 @@ const FoundWords: React.FC<FoundWordsProps> = ({
 }) => {
   return (
     <div className={cn("w-full", className)}>
-      <div className="mb-2 text-sm font-medium text-bee-darkGray">
+      <div className="mb-2 text-sm font-medium text-slate-600">
         You have found {words.length} word{words.length !== 1 ? 's' : ''}
       </div>
-      <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm h-60 overflow-y-auto">
+      <div className="p-4 bg-white rounded-lg border border-slate-200 shadow-sm h-60 overflow-y-auto">
         {words.length === 0 ? (
-          <div className="text-gray-400 text-center italic py-4">
+          <div className="text-slate-400 text-center italic py-4">
             Your found words will appear here
           </div>
         ) : (
@@ -30,7 +30,7 @@ const FoundWords: React.FC<FoundWordsProps> = ({
                 key={index} 
                 className={cn(
                   "text-sm font-medium py-1 px-2 rounded capitalize word-appear",
-                  pangrams.includes(word.toLowerCase()) && "font-bold text-bee-black bg-bee-lightYellow"
+                  pangrams.includes(word.toLowerCase()) && "font-bold text-white bg-indigo-600"
                 )}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
